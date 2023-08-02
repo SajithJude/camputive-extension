@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Clean Text</title>
+</head>
+
+<body data-theme="luxury">
+
+    <div class="hero min-h-screen" style="background-image: url(./assets/fondo.jpg);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="flex flex-col justify-content-center">
+                <h1 class="text-3xl text-white">Clean And Rewrite Text</h1>
+                <br>
+
+                <div class="flex flex-col w-100 justify-center items-center flex-space-around">
+
+                    <textarea placeholder="insert text" id="input-text"
+                        class="textarea textarea-bordered  p-5"></textarea>
+                      
+                    <button class=" btn btn-primary" id="clean-button">Enviar</button>
+                       
+                </div><!--  -->
+                <br>
+
+                <div class="p-10">
+                    <div class="card w-96 bg-base-100 shadow-xl image-full">
+                        <div class="card-body">
+                           
+                            <p id="output-text" class="text-3xl"></p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary" id="Copy-button">Copiar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New card to display scraped data -->
+                    <div class="card w-96 bg-base-100 shadow-xl image-full">
+                        <div class="card-body">
+                            <h2 class="text-2xl">Scraped Data</h2>
+                            <div id="data-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
